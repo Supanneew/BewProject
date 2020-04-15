@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "130850975981",
+    "firebase_url": "https://enetbapp-50fee.firebaseio.com",
+    "project_id": "enetbapp-50fee",
+    "storage_bucket": "enetbapp-50fee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130850975981:android:a443be0f22e1c27e46dce4",
+        "android_client_info": {
+          "package_name": "com.enetb.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130850975981-42tt6kqqqiodvbqol9e8bcqcrnj4r9r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCurn7WpKlWkunN8g4-GDA7aeGO3TiDwIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130850975981-42tt6kqqqiodvbqol9e8bcqcrnj4r9r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
