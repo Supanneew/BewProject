@@ -5,6 +5,8 @@ import 'package:enetb/models/load_model.dart';
 import 'package:enetb/screens/show_load_pdf.dart';
 import 'package:flutter/material.dart';
 
+String fontFam = 'Quark';
+
 class DetailLoad extends StatefulWidget {
   final int index;
 
@@ -47,7 +49,12 @@ class _DetailLoadState extends State<DetailLoad> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('เอกสาร',
+          style: TextStyle(
+            fontFamily: fontFam,fontWeight: FontWeight.bold,
+            fontSize: 25,),), centerTitle: true,
+      ),
       body: loadModels.length == 0
           ? Center(
               child: CircularProgressIndicator(),
@@ -60,8 +67,10 @@ class _DetailLoadState extends State<DetailLoad> {
                   Navigator.of(context).push(route);
                 },
                 child: ListTile(
-                    leading: Icon(Icons.book),
-                    title: Text(loadModels[index].name)),
+                    leading: Icon(Icons.book,size: 40.0,),
+                    title: Text(loadModels[index].name,style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 21,),)),
               ),
             ),
     );

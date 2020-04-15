@@ -70,7 +70,7 @@ class _PerAState extends State<PerA> {
             color: Colors.deepOrange,
           ),
           Padding(
-            padding: const EdgeInsets.all(5.0),
+            padding: const EdgeInsets.all(10.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -80,7 +80,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(0);
                     },
                     child: Image.asset(
-                      'assets/images/t1.png',
+                      'assets/images/ar1.png',
                       width: imageWidth,
                     ),
                   ),
@@ -89,7 +89,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(1);
                     },
                     child: Image.asset(
-                      'assets/images/t2.png',
+                      'assets/images/ar2.png',
                       width: imageWidth,
                     ),
                   ),
@@ -98,7 +98,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(2);
                     },
                     child: Image.asset(
-                      'assets/images/t3.png',
+                      'assets/images/ar3.png',
                       width: imageWidth,
                     ),
                   ),
@@ -107,7 +107,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(3);
                     },
                     child: Image.asset(
-                      'assets/images/t4.png',
+                      'assets/images/ar4.png',
                       width: imageWidth,
                     ),
                   ),
@@ -116,7 +116,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(4);
                     },
                     child: Image.asset(
-                      'assets/images/t5.png',
+                      'assets/images/ar5.png',
                       width: imageWidth,
                     ),
                   ),

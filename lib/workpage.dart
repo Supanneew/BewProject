@@ -38,7 +38,7 @@ class _WorkPageState extends State<WorkPage> {
               child: Text(
                 title,
                 style: TextStyle(
-                  fontSize: 18.0,
+                  fontSize: 16.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),

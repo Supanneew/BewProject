@@ -14,39 +14,9 @@ class _DataPageState extends State<DataPage> {
   Widget showImageA() {
     return Container(
       width: 300.0,
-      child: Image.asset('assets/images/data1.jpg'),
+      child: Image.asset('assets/images/datanew.png'),
     );
   }
-
-  Widget showImageB() {
-    return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data2.png'),
-    );
-  }
-
-  Widget showImageC() {
-    return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data3.png'),
-    );
-  }
-
-  Widget showImageD() {
-    return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data4.png'),
-    );
-  }
-
-
-  Widget showImageE() {
-    return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data5.png'),
-    );
-  }
-
 
 
   @override
@@ -69,13 +39,6 @@ class _DataPageState extends State<DataPage> {
               children: <Widget>[
                 showImageA(),
 
-                showImageB(),
-
-                showImageC(),
-
-                showImageD(),
-
-                showImageE(),
               ],
             ),
           ),

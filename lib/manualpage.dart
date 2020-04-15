@@ -36,21 +36,21 @@ class _ManualPageState extends State<ManualPage> {
                   MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return ManualA();});
                   Navigator.of(context).push(route);
                 }
-                  , child: Image.asset('assets/images/man1.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/m-01.png',width: imageWidth,),),
 
 
                 FlatButton(onPressed: () {
                   MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return ManualB();});
                   Navigator.of(context).push(route);
                 }
-                  , child: Image.asset('assets/images/man2.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/l-01.png',width: imageWidth,),),
 
 
                 FlatButton(onPressed: () {
                   MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return ManualC();});
                   Navigator.of(context).push(route);
                 }
-                  , child: Image.asset('assets/images/man3.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/v-01.png',width: imageWidth,),),
               ],
             ),
           )

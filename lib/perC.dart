@@ -29,14 +29,14 @@ class _PerCState extends State<PerC> {
             color: Colors.deepOrange,
           ),
           Padding(
-            padding: const EdgeInsets.all(5.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 FlatButton(onPressed: () {
 
                 }
-                  , child: Image.asset('assets/images/e1.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/en1.png',width: imageWidth,),),
 
 
 

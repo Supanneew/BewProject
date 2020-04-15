@@ -44,7 +44,9 @@ class _PlayVideoState extends State<PlayVideo> {
   }
 
   Widget titleAppBar() {
-    return Text(_jobModel.name);
+    return Text(_jobModel.name,style: TextStyle(
+    fontWeight: FontWeight.bold,
+      fontSize: 25,));
   }
 
   @override

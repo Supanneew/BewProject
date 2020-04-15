@@ -38,7 +38,11 @@ class _ShowLoadPdfState extends State<ShowLoadPdf> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(loadModel.name,style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 25,),),
+      ),
       body: pdfDocument == null
           ? Center(
               child: CircularProgressIndicator(),

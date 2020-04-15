@@ -1,4 +1,5 @@
 import 'package:enetb/HomeScreen.dart';
+import 'package:enetb/mainpage.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'dart:convert';
@@ -57,7 +58,7 @@ class RegisterStudentState extends State<RegisterStudent> {
     String studentId = studentIdController.text;
     String password = passwordController.text;
     String citizenId = citizenIdController.text;
-    String year = citizenIdController.text;
+    String year = yearController.text;
 
     if(tmpFile == null || firstName.isEmpty || lastName.isEmpty || studentId.isEmpty || password.isEmpty){
       alertDialog();
@@ -386,11 +387,11 @@ class AlerSuccess extends StatelessWidget {
                       color: Color(0xfffe0000),
                       textColor: Colors.white,
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Text('กลับไปที่หน้าเข้าใช้งาน'),
+                      child: Text('กลับไปที่หน้าหลัก'),
                       onPressed: () => {
                         Navigator.of(context)
                             .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
-                          return new HomeScreen(userId: null, type: null);
+                          return new MainPage(userId: null, type: null);
                         }))
                       },
                     ),

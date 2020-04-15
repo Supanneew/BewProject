@@ -348,7 +348,7 @@ class HomeScreentState extends State<HomeScreen> {
                             MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return LoadPage();});
                             Navigator.of(context).push(route);
                           }, child: Image.asset('assets/images/load.png',width: imageWidth,),),
-                          Text('ดาวน์โหลด' ,
+                          Text('เอกสาร' ,
                             style: TextStyle(
                               fontFamily: fontFam,fontWeight: FontWeight.bold,
                               fontSize: fontSizeButt,

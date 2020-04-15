@@ -31,7 +31,7 @@ class _PersonPageState extends State<PersonPage> {
             color: Colors.deepOrange,
           ),
           Padding(
-            padding: const EdgeInsets.all(5.0),
+            padding: const EdgeInsets.only(top: 40.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -40,21 +40,27 @@ class _PersonPageState extends State<PersonPage> {
                     MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return PerA();});
                     Navigator.of(context).push(route);
                   }
-                    , child: Image.asset('assets/images/per1.png',width: imageWidth,),),
+                    , child: Image.asset('assets/images/1-01.png',width: imageWidth,),),
 
+                  SizedBox(
+                    height: 30.0,
+                  ),
 
                   FlatButton(onPressed: () {
                     MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return PerB();});
                     Navigator.of(context).push(route);
                   }
-                    , child: Image.asset('assets/images/per2.png',width: imageWidth,),),
+                    , child: Image.asset('assets/images/2-01.png',width: imageWidth,),),
 
+                  SizedBox(
+                    height: 16.0,
+                  ),
 
                   FlatButton(onPressed: () {
                     MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return PerC();});
                     Navigator.of(context).push(route);
                   }
-                    , child: Image.asset('assets/images/per3.png',width: imageWidth,),),
+                    , child: Image.asset('assets/images/3-01.png',width: imageWidth,),),
                 ],
               ),
             ),

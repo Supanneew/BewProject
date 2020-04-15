@@ -29,7 +29,7 @@ class _PerBState extends State<PerB> {
             color: Colors.deepOrange,
           ),
           Padding(
-            padding: const EdgeInsets.all(5.0),
+            padding: const EdgeInsets.all(10.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -37,49 +37,76 @@ class _PerBState extends State<PerB> {
                   FlatButton(onPressed: () {
 
                   }
-                    , child: Image.asset('assets/images/ta1.png',width: imageWidth,),),
+                    , child: Image.asset('assets/images/ba1.png',width: imageWidth,),),
+
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+                  FlatButton(onPressed: () {
+
+                  }
+                    , child: Image.asset('assets/images/ba2.png',width: imageWidth,),),
+
+
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+                  FlatButton(onPressed: () {
+
+                  }
+                    , child: Image.asset('assets/images/ba3.png',width: imageWidth,),),
+
+
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+                  FlatButton(onPressed: () {
+
+                  }
+                    , child: Image.asset('assets/images/ba4.png',width: imageWidth,),),
+
+
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+                  FlatButton(onPressed: () {
+
+                  }
+                    , child: Image.asset('assets/images/ba5.png',width: imageWidth,),),
+
+                  SizedBox(
+                    height: 10.0,
+                  ),
 
 
                   FlatButton(onPressed: () {
 
                   }
-                    , child: Image.asset('assets/images/ta2.png',width: imageWidth,),),
+                    , child: Image.asset('assets/images/ba6.png',width: imageWidth,),),
+
+
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+                  FlatButton(onPressed: () {
+
+                  }
+                    , child: Image.asset('assets/images/ba7.png',width: imageWidth,),),
+
+                  SizedBox(
+                    height: 10.0,
+                  ),
 
 
                   FlatButton(onPressed: () {
 
                   }
-                    , child: Image.asset('assets/images/ta3.png',width: imageWidth,),),
-
-
-                  FlatButton(onPressed: () {
-
-                  }
-                    , child: Image.asset('assets/images/ta4.png',width: imageWidth,),),
-
-
-                  FlatButton(onPressed: () {
-
-                  }
-                    , child: Image.asset('assets/images/ta5.png',width: imageWidth,),),
-
-
-                  FlatButton(onPressed: () {
-
-                  }
-                    , child: Image.asset('assets/images/ta6.png',width: imageWidth,),),
-
-
-                  FlatButton(onPressed: () {
-
-                  }
-                    , child: Image.asset('assets/images/ta7.png',width: imageWidth,),),
-
-
-                  FlatButton(onPressed: () {
-
-                  }
-                    , child: Image.asset('assets/images/ta8.png',width: imageWidth,),),
+                    , child: Image.asset('assets/images/ba8.png',width: imageWidth,),),
                 ],
               ),
             ),

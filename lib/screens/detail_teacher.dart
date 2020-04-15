@@ -31,11 +31,14 @@ class _DetailTeacherState extends State<DetailTeacher> {
           children: <Widget>[
             showImage(),
             showName(),
+            SizedBox(
+              height: 10.0,
+            ),
             showTeacherDetail('รหัสอาจารย์', model.user),
             showTeacherDetail('ตำแหน่งราชการ', model.position),
             showTeacherDetail('มหาวิทยาลัย', model.university),
             showTeacherDetail('คณะ', model.faculty),
-            showTeacherDetail('ภาควิชา/สาขาวิา', model.major),
+            showTeacherDetail('ภาควิชา/สาขาวิชา', model.major),
             showTeacherContact(Icons.email, Text(model.email, style: TextStyle(color: Colors.lightBlue),)),
             showTeacherContact(Icons.phone, Text(model.callNum)),
             showTeacherContact(Icons.home, Text(model.roomRest)),
@@ -57,13 +60,13 @@ class _DetailTeacherState extends State<DetailTeacher> {
           padding: EdgeInsets.only(
             left: 16.0,
           ),
-          width: 100.0,
+          width: 150.0,
           child: Text(
             title,
-            style: TextStyle(color: Colors.blue),
+            style: TextStyle(color: Colors.blue,fontSize: 16.0),
           ),
         ),
-        Text(detail),
+        Text(detail,style: TextStyle(fontSize: 16.0),),
       ],
     );
   }
@@ -71,7 +74,7 @@ class _DetailTeacherState extends State<DetailTeacher> {
   Text showName() => Text(
         model.name,
         style: TextStyle(
-          fontSize: 30.0,
+          fontSize: 25.0,
           fontWeight: FontWeight.bold,
         ),
       );

@@ -1,4 +1,5 @@
 import 'package:enetb/SplashScreen.dart';
+import 'package:enetb/mainpage.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'dart:convert';
@@ -93,7 +94,7 @@ class ProfileScreenState extends State<ProfileStudentScreen> {
               onPressed: () => {
               Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(builder: (BuildContext context) => HomeScreen(userId: null, type: null)),
+                MaterialPageRoute(builder: (BuildContext context) => MainPage(userId: null, type: null)),
                 ModalRoute.withName('/'),
                 )
               },
@@ -219,12 +220,10 @@ class ProfileScreenState extends State<ProfileStudentScreen> {
                       child:
                         Image.network(
                           data['image'],
-                          width: 200,
-                          height: 300,
+                          width: 120,
+                          height: 220,
                         )
                     ),
-
-
 
 
                     Visibility(
@@ -234,8 +233,6 @@ class ProfileScreenState extends State<ProfileStudentScreen> {
                             child: CircularProgressIndicator( backgroundColor: Colors.black)
                         )
                     ),
-
-
 
 
                   ],

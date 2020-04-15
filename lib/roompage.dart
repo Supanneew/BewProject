@@ -33,29 +33,31 @@ class _RoomPageState extends State<RoomPage> {
           ),
           Padding(
             padding: const EdgeInsets.all(0.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                FlatButton(onPressed: () {
-                  MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return RoompageA();});
-                  Navigator.of(context).push(route);
-                }
-                  , child: Image.asset('assets/images/room1.png',width: imageWidth,),),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  FlatButton(onPressed: () {
+                    MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return RoompageA();});
+                    Navigator.of(context).push(route);
+                  }
+                    , child: Image.asset('assets/images/lab.png',width: imageWidth,),),
 
 
-                FlatButton(onPressed: () {
-                  MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return RoompageB();});
-                  Navigator.of(context).push(route);
-                }
-                  , child: Image.asset('assets/images/room2.png',width: imageWidth,),),
+                  FlatButton(onPressed: () {
+                    MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return RoompageB();});
+                    Navigator.of(context).push(route);
+                  }
+                    , child: Image.asset('assets/images/kdtv.png',width: imageWidth,),),
 
 
-                FlatButton(onPressed: () {
-                  MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return RoompageC();});
-                  Navigator.of(context).push(route);
-                }
-                  , child: Image.asset('assets/images/room3.png',width: imageWidth,),),
-              ],
+                  FlatButton(onPressed: () {
+                    MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return RoompageC();});
+                    Navigator.of(context).push(route);
+                  }
+                    , child: Image.asset('assets/images/mac.png',width: imageWidth,),),
+                ],
+              ),
             ),
           )
         ],

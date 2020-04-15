@@ -22,7 +22,7 @@ class _LoadPageState extends State<LoadPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ดาวน์โหลด',
+        title: Text('เอกสาร',
           style: TextStyle(
             fontFamily: fontFam,fontWeight: FontWeight.bold,
             fontSize: 25,),), centerTitle: true,),
@@ -41,14 +41,14 @@ class _LoadPageState extends State<LoadPage> {
                     print('Click 0');
                     moveToListDown(0);
                 }
-                  , child: Image.asset('assets/images/lo1.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/load1.png',width: imageWidth,),),
 
 
                 FlatButton(onPressed: () {
                   print('Click 1');
                   moveToListDown(1);
                 }
-                  , child: Image.asset('assets/images/lo2.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/load2.png',width: imageWidth,),),
               ],
             ),
           )

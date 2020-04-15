@@ -44,7 +44,8 @@ class MenuOnlineScreenStudent extends StatelessWidget {
                       textColor: Colors.white,
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text('ลงทะเบียน',
-                        style: TextStyle(fontFamily: fontFam,),),
+                        style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                          fontSize: 18,),),
                       onPressed: () {
                         Navigator.of(context).push(
                             MaterialPageRoute<Null>(builder: (BuildContext context) {
@@ -71,7 +72,8 @@ class MenuOnlineScreenStudent extends StatelessWidget {
                       textColor: Colors.white,
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text('ประเมินการสอน',
-                        style: TextStyle(fontFamily: fontFam,),),
+                        style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                          fontSize: 18,),),
                       onPressed: () {
                         Navigator.of(context).push(
                             MaterialPageRoute<Null>(builder: (BuildContext context) {
@@ -134,7 +136,8 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                         textColor: Colors.white,
                         padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                         child: Text('ลงทะเบียน',
-                          style: TextStyle(fontFamily: fontFam,),),
+                          style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                            fontSize: 18,),),
                         onPressed: () {
                           Navigator.of(context).push(
                               MaterialPageRoute<Null>(builder: (BuildContext context) {
@@ -160,7 +163,8 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                         textColor: Colors.white,
                         padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                         child: Text('ประเมินการสอน',
-                          style: TextStyle(fontFamily: fontFam,),),
+                          style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                            fontSize: 18,),),
                         onPressed: () {
                           Navigator.of(context).push(
                               MaterialPageRoute<Null>(builder: (BuildContext context) {
@@ -186,7 +190,8 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                         textColor: Colors.white,
                         padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                         child: Text('ส่งเกรด',
-                          style: TextStyle(fontFamily: fontFam,),),
+                          style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                            fontSize: 18,),),
                         onPressed: () {
                           Navigator.of(context).push(
                               MaterialPageRoute<Null>(builder: (BuildContext context) {
@@ -212,7 +217,8 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                         textColor: Colors.white,
                         padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                         child: Text('สถิตินักศึกษา',
-                          style: TextStyle(fontFamily: fontFam,),),
+                          style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                            fontSize: 18,),),
                         onPressed: () {
                           Navigator.of(context).push(
                               MaterialPageRoute<Null>(builder: (BuildContext context) {
@@ -238,7 +244,8 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                         textColor: Colors.white,
                         padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                         child: Text('ฐานข้อมูลวิจัย',
-                          style: TextStyle(fontFamily: fontFam,),),
+                          style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                          fontSize: 18,),),
                         onPressed: () {
                           Navigator.of(context).push(
                               MaterialPageRoute<Null>(builder: (BuildContext context) {

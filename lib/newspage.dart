@@ -93,7 +93,9 @@ class _NewsPageState extends State<NewsPage> {
             ),
             Container(
               width: MediaQuery.of(context).size.width * 0.5,
-              child: Text(newsModels[index].name),
+              child: Text(newsModels[index].name,style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 17,),),
             ),
           ],
         ),

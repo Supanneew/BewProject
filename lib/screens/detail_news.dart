@@ -26,7 +26,7 @@ class _DetailNewsState extends State<DetailNews> {
     return Text(
       model.name,
       style: TextStyle(
-        fontSize: 20.0,
+        fontSize: 25.0,
         fontWeight: FontWeight.bold,
         color: Colors.deepOrange,
       ),
@@ -40,7 +40,9 @@ class _DetailNewsState extends State<DetailNews> {
   }
 
   Widget showDetail() {
-    return Text(model.message);
+    return Text(model.message,
+        style: TextStyle(
+        fontSize: 18.0,),);
   }
 
   Widget build(BuildContext context) {

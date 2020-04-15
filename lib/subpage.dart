@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 const PrimaryColor = const Color(0xFFFF6B00);
 String fontFam = 'Quark';
-double imageWidth = 420;
+double imageWidth = 450;
 
 class SubPage extends StatefulWidget {
   @override
@@ -37,16 +37,13 @@ class _SubPageState extends State<SubPage> {
                   MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return SubpageA();});
                   Navigator.of(context).push(route);
                 }
-                , child: Image.asset('assets/images/sub1.png',width: imageWidth,),),
+                , child: Image.asset('assets/images/2560.png',width: imageWidth,),),
 
-                SizedBox(
-                  height: 5.0,
-                ),
                 FlatButton(onPressed: () {
                   MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return SubpageB();});
                   Navigator.of(context).push(route);
                 }
-                  , child: Image.asset('assets/images/sub2.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/2555.png',width: imageWidth,),),
               ],
             ),
           )

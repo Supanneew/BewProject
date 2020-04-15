@@ -55,7 +55,9 @@ class _ListVrState extends State<ListVr> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(model.name),
+        title: Text(model.name,style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 25,),),
       ),
       body: status ? showImage() : pdfDocument == null
           ? CircularProgressIndicator()

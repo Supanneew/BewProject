@@ -96,7 +96,9 @@ class _ListVideoState extends State<ListVideo> {
 
   Widget showTitleAppbar() {
     int i = int.parse(myCategory);
-    return Text(titles[i]);
+    return Text(titles[i],style: TextStyle(
+      fontWeight: FontWeight.bold,
+      fontSize: 25,));
   }
 
   @override
