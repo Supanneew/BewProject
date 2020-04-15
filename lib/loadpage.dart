@@ -1,3 +1,4 @@
+import 'package:enetb/screens/detail_load.dart';
 import 'package:flutter/material.dart';
 
 const PrimaryColor = const Color(0xFFFF6B00);
@@ -10,6 +11,12 @@ class LoadPage extends StatefulWidget {
 }
 
 class _LoadPageState extends State<LoadPage> {
+
+  void moveToListDown(int index){
+    MaterialPageRoute route = MaterialPageRoute(builder: (value)=>DetailLoad(index: index,));
+    Navigator.of(context).push(route);
+  }
+
   @override
 
   Widget build(BuildContext context) {
@@ -31,13 +38,15 @@ class _LoadPageState extends State<LoadPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 FlatButton(onPressed: () {
-
+                    print('Click 0');
+                    moveToListDown(0);
                 }
                   , child: Image.asset('assets/images/lo1.png',width: imageWidth,),),
 
 
                 FlatButton(onPressed: () {
-
+                  print('Click 1');
+                  moveToListDown(1);
                 }
                   , child: Image.asset('assets/images/lo2.png',width: imageWidth,),),
               ],

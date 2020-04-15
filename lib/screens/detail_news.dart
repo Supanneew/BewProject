@@ -1,4 +1,5 @@
 import 'package:enetb/models/news_model.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DetailNews extends StatefulWidget {
@@ -18,38 +19,45 @@ class _DetailNewsState extends State<DetailNews> {
     // TODO: implement initState
     super.initState();
     model = widget.newsModel;
+    print('message ==>>> ${model.message}');
   }
 
   Widget showName() {
-    Text(model.name,
-    style: TextStyle(
-    fontSize:20.0,
-    fontWeight: FontWeight.bold,
-    ),
+    return Text(
+      model.name,
+      style: TextStyle(
+        fontSize: 20.0,
+        fontWeight: FontWeight.bold,
+        color: Colors.deepOrange,
+      ),
     );
   }
 
-  Widget showImage(){
-    NetworkImage(model.pathImage);
+  Widget showImage() {
+    return Container(margin: EdgeInsets.only(top: 16.0,bottom: 16.0),
+      child: Image.network(model.pathImage),
+    );
   }
 
-  Widget showDetail(){
-    Text(model.message);
+  Widget showDetail() {
+    return Text(model.message);
   }
 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            showName(),
-            showImage(),
-            showDetail(),
-          ],
+        child: Container(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            children: <Widget>[
+              showName(),
+              showImage(),
+              showDetail(),
+            ],
+          ),
         ),
       ),
-
     );
   }
 }

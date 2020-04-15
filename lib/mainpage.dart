@@ -1,5 +1,5 @@
 import 'package:enetb/HomeScreen.dart';
-import 'package:enetb/detailnews.dart';
+import 'package:enetb/newspage.dart';
 import 'package:enetb/screens/show_notification.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +25,7 @@ class _MainPageState extends State<MainPage> {
   int currentIndex = 0;
   List pages = [
     HomeScreen(),
-    ListNews(),
+    NewsPage(),
     QrPage(),
     FirstScreen(),
     ManualPage()
