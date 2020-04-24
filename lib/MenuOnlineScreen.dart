@@ -13,6 +13,7 @@ class MenuOnlineScreenStudent extends StatelessWidget {
 
   String urlRegis = "http://klogic.kmutnb.ac.th:8080/kris/index.jsp";
   String urlTeach = "https://grade.icit.kmutnb.ac.th/";
+  String urlGrade2 = "http://grade-report.icit.kmutnb.ac.th/";
   String urlGrade = "https://grade.icit.kmutnb.ac.th/";
   String urlStat = "http://ureport.kmutnb.ac.th/";
   String urlResearch = "http://researchdb.kmutnb.ac.th/";
@@ -26,69 +27,98 @@ class MenuOnlineScreenStudent extends StatelessWidget {
           fontFamily: fontFam,fontWeight: FontWeight.bold,
           fontSize: 25,),),centerTitle: true, backgroundColor: PrimaryColor,),
         backgroundColor: Theme.of(context).primaryColor,
-        body: Center(
+        body: Container(
+          color: Colors.white,
           child: Center(
-            child:
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  margin: const EdgeInsets.only(bottom: 20.0),
-                  child : ButtonTheme(
-                    minWidth: 250.0,
-                    height: 50.0,
-                    child:  RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(30.0)),
-                      color: Color(0xffee6200),
-                      textColor: Colors.white,
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Text('ลงทะเบียน',
-                        style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
-                          fontSize: 18,),),
-                      onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute<Null>(builder: (BuildContext context) {
-                              return new WebViewScreen(
-                                urlString: urlRegis,
-                                titleString: 'ลงทะเบียน',
-                              );
-                            }));
+            child: Center(
+              child:
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 20.0),
+                    child : ButtonTheme(
+                      minWidth: 250.0,
+                      height: 50.0,
+                      child:  RaisedButton(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0)),
+                        color: Color(0xffee6200),
+                        textColor: Colors.white,
+                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                        child: Text('ลงทะเบียน',
+                          style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                            fontSize: 18,),),
+                        onPressed: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute<Null>(builder: (BuildContext context) {
+                                return new WebViewScreen(
+                                  urlString: urlRegis,
+                                  titleString: 'ลงทะเบียน',
+                                );
+                              }));
 
-                      },
+                        },
+                      ),
                     ),
                   ),
-                ),
 
-                Container(
-                  margin: const EdgeInsets.only(bottom: 20.0),
-                  child : ButtonTheme(
-                    minWidth: 250.0,
-                    height: 50.0,
-                    child:  RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(30.0)),
-                      color: Color(0xfffe0000),
-                      textColor: Colors.white,
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Text('ประเมินการสอน',
-                        style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
-                          fontSize: 18,),),
-                      onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute<Null>(builder: (BuildContext context) {
-                              return new WebViewScreen(
-                                urlString: urlTeach,
-                                titleString: 'ประเมินการสอน',
-                              );
-                            }));
-                      },
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 20.0),
+                    child : ButtonTheme(
+                      minWidth: 250.0,
+                      height: 50.0,
+                      child:  RaisedButton(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0)),
+                        color: Color(0xfffe0000),
+                        textColor: Colors.white,
+                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                        child: Text('ประเมินการสอน',
+                          style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                            fontSize: 18,),),
+                        onPressed: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute<Null>(builder: (BuildContext context) {
+                                return new WebViewScreen(
+                                  urlString: urlTeach,
+                                  titleString: 'ประเมินการสอน',
+                                );
+                              }));
+                        },
+                      ),
                     ),
                   ),
-                ),
 
-              ],
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 20.0),
+                    child : ButtonTheme(
+                      minWidth: 250.0,
+                      height: 50.0,
+                      child:  RaisedButton(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0)),
+                        color: Color(0xffee6200),
+                        textColor: Colors.white,
+                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                        child: Text('ตรวจสอบผลการเรียน',
+                          style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
+                            fontSize: 18,),),
+                        onPressed: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute<Null>(builder: (BuildContext context) {
+                                return new WebViewScreen(
+                                  urlString: urlGrade2,
+                                  titleString: 'ตรวจสอบผลการเรียน',
+                                );
+                              }));
+                        },
+                      ),
+                    ),
+                  ),
+                ],
 
+              ),
             ),
           ),
         ),
