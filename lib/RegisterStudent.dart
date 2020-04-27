@@ -20,6 +20,9 @@ class RegisterStudent extends StatefulWidget {
 
 class RegisterStudentState extends State<RegisterStudent> {
   //
+//  static final String uploadEndPoint =
+//      'http://128.199.170.20/api_enetb/register_student.php';
+
   static final String uploadEndPoint =
       'http://128.199.170.20/api_enetb/register_student.php';
   Future<File> file;

@@ -4,6 +4,7 @@ import 'package:enetb/personpage.dart';
 import 'package:enetb/qrpage.dart';
 import 'package:enetb/roompage.dart';
 import 'package:enetb/subpage.dart';
+import 'package:enetb/utility/my_lancher.dart';
 import 'package:enetb/webpage.dart';
 import 'package:enetb/workpage.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,7 @@ import 'package:enetb/FirstScreen.dart';
 import 'package:enetb/ProfileScreen.dart';
 import 'package:enetb/calendara.dart';
 import 'package:enetb/manualpage.dart';
+import 'package:url_launcher/url_launcher.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'datapage.dart';
 import 'loadpage.dart';
@@ -78,7 +80,6 @@ class HomeScreentState extends State<HomeScreen> {
   }
 
 
-
   @override
   Widget build(BuildContext context) {
 
@@ -123,13 +124,7 @@ class HomeScreentState extends State<HomeScreen> {
                         child: Column(
                           children:<Widget>[
                             FlatButton(onPressed: () {
-                              Navigator.of(context).push(
-                                  MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                    return new WebViewScreen(
-                                      urlString: urlSche,
-                                      titleString: 'ตารางเรียน',
-                                    );
-                                  }));
+                              MyLancher().lancherToWeb(urlSche);
                             }, child: Image.asset('assets/images/study.png',width: imageWidth,),),
                             Text('ตารางเรียน' ,
                               style: TextStyle(
@@ -307,13 +302,7 @@ class HomeScreentState extends State<HomeScreen> {
                       child: Column(
                         children: <Widget>[
                           FlatButton(onPressed: () {
-                            Navigator.of(context).push(
-                                MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                  return new WebViewScreen(
-                                    urlString: urlExam,
-                                    titleString: 'คลังข้อสอบเก่า',
-                                  );
-                                }));
+                            MyLancher().lancherToWeb(urlExam);
                           }, child: Image.asset('assets/images/test.png',width: imageWidth,),),
                           Text('คลังข้อสอบเก่า' ,
                             style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 const PrimaryColor = const Color(0xFFFF6B00);
@@ -21,6 +22,13 @@ class WebviewScreentState extends State<WebViewScreen> {
   WebviewScreentState(this.urlString, this.titleString);  //constructor
   final String urlString;
   final String titleString;
+
+
+  Future<void> lancherToWeb()async{
+    if (await canLaunch(urlString)) {
+      await launch(urlString);
+    } else {}
+  }
 
   @override
   Widget build(BuildContext context) {

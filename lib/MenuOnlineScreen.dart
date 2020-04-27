@@ -1,3 +1,4 @@
+import 'package:enetb/utility/my_lancher.dart';
 import 'package:flutter/material.dart';
 import 'package:enetb/RegisterTeacher.dart';
 import 'package:enetb/LoginScreen.dart';
@@ -50,13 +51,7 @@ class MenuOnlineScreenStudent extends StatelessWidget {
                           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
                             fontSize: 18,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlRegis,
-                                  titleString: 'ลงทะเบียน',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlRegis);
 
                         },
                       ),
@@ -78,13 +73,7 @@ class MenuOnlineScreenStudent extends StatelessWidget {
                           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
                             fontSize: 18,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlTeach,
-                                  titleString: 'ประเมินการสอน',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlTeach);
                         },
                       ),
                     ),
@@ -105,13 +94,7 @@ class MenuOnlineScreenStudent extends StatelessWidget {
                           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
                             fontSize: 18,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlGrade2,
-                                  titleString: 'ตรวจสอบผลการเรียน',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlGrade2);
                         },
                       ),
                     ),
@@ -169,13 +152,7 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
                             fontSize: 18,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlRegis,
-                                  titleString: 'ลงทะเบียน',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlRegis);
                         },
                       ),
                     ),
@@ -196,13 +173,7 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
                             fontSize: 18,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlTeach,
-                                  titleString: 'ประเมินการสอน',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlTeach);
                         },
                       ),
                     ),
@@ -223,13 +194,7 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
                             fontSize: 18,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlGrade,
-                                  titleString: 'ส่งเกรด',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlGrade);
                         },
                       ),
                     ),
@@ -250,13 +215,7 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
                             fontSize: 18,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlStat,
-                                  titleString: 'สถิตินักศึกษา',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlStat);
                         },
                       ),
                     ),
@@ -277,13 +236,7 @@ class MenuOnlineScreenTeacher extends StatelessWidget {
                           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
                           fontSize: 18,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlResearch,
-                                  titleString: 'ฐานข้อมูลวิจัย',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlResearch);
                         },
                       ),
                     ),

@@ -60,7 +60,6 @@ class _QrPageState extends State<QrPage> {
         resultCode = 'Cannot Launch $resultCode';
       });
     }
-
   }
 
   @override

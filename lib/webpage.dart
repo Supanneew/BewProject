@@ -1,4 +1,5 @@
 import 'package:enetb/MenuOnlineScreen.dart';
+import 'package:enetb/utility/my_lancher.dart';
 import 'package:flutter/material.dart';
 
 const PrimaryColor = const Color(0xFFFF6B00);
@@ -52,13 +53,7 @@ class _WebPageState extends State<WebPage> {
                         child: Text('สถานีโทรทัศน์ระบบดิจิตอล',
                           style: TextStyle(fontFamily: fontFam, fontSize: 20, fontWeight: FontWeight.bold,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlKdtv,
-                                  titleString: 'สถานีโทรทัศน์ระบบดิจิตอล',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlKdtv);
                         },
                       ),
                     ),
@@ -78,13 +73,7 @@ class _WebPageState extends State<WebPage> {
                         child: Text('แขนงวิชา',
                           style: TextStyle(fontFamily: fontFam, fontSize: 20, fontWeight: FontWeight.bold,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlEnetb,
-                                  titleString: 'แขนงวิชา',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlEnetb);
                         },
                       ),
                     ),
@@ -104,13 +93,7 @@ class _WebPageState extends State<WebPage> {
                         child: Text('สหกิจศึกษา',
                           style: TextStyle(fontFamily: fontFam, fontSize: 20, fontWeight: FontWeight.bold,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlCo,
-                                  titleString: 'สหกิจศึกษา',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlCo);
                         },
                       ),
                     ),
@@ -130,13 +113,7 @@ class _WebPageState extends State<WebPage> {
                         child: Text('ปริญญานิพนธ์',
                           style: TextStyle(fontFamily: fontFam, fontSize: 20, fontWeight: FontWeight.bold,),),
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute<Null>(builder: (BuildContext context) {
-                                return new WebViewScreen(
-                                  urlString: urlProject,
-                                  titleString: 'ปริญญานิพนธ์',
-                                );
-                              }));
+                          MyLancher().lancherToWeb(urlProject);
                         },
                       ),
                     ),

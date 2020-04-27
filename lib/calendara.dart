@@ -1,4 +1,5 @@
 
+import 'package:enetb/utility/my_lancher.dart';
 import 'package:flutter/material.dart';
 
 import 'WebviewScreen.dart';
@@ -29,13 +30,7 @@ class _CalendaraPageState extends State<CalendaraPage> {
       child: Text('ปฏิทินเพื่อการศึกษา',
         style: TextStyle(fontFamily: fontFam, fontSize: 18, fontWeight: FontWeight.bold,),),
       onPressed: () {
-        MaterialPageRoute materialPageRoute =
-            MaterialPageRoute(builder: (BuildContext buildContext) {
-          return WebViewScreen(urlString:
-          'http://acdserv.kmutnb.ac.th/academic-calendar',
-          titleString: 'ปฏิทินเพื่อการศึกษา',);
-        });
-        Navigator.of(context).push(materialPageRoute);
+        MyLancher().lancherToWeb('http://acdserv.kmutnb.ac.th/academic-calendar');
       },
     );
   }
